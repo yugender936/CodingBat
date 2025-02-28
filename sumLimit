@@ -1,0 +1,14 @@
+public int sumLimit(int a, int b) {
+  int sum = a+b;
+  String str = String.valueOf(sum);
+  int n = str.length();
+  String str1 = String.valueOf(a);
+  int m = str1.length();
+  if(n == m){
+    return sum;
+  }
+  if(n > a || n < a){
+    return a;
+  }
+  return a+b;
+}
