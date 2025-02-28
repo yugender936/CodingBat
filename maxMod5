@@ -1,0 +1,19 @@
+public int maxMod5(int a, int b) {
+   int rem1 = a % 5;
+   int rem2 = b % 5;
+   if(rem1 == rem2){
+     if(a > b){
+       return b;
+     }
+     if(b > a){
+       return a;
+     }
+   }
+   if(a > b){
+     return a;
+   }
+   if(b > a){
+     return b;
+   }
+   return 0;
+}
