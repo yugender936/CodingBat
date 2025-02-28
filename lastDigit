@@ -1,0 +1,9 @@
+public boolean lastDigit(int a, int b, int c) {
+   int rem = a % 10;
+   int rem1 = b % 10;
+   int rem2 = c % 10;
+   if(rem == rem1 || rem1 == rem2 || rem == rem2){
+     return true;
+   }
+   return false;
+}
